@@ -1,11 +1,9 @@
-function openGarage(){
-let carCounter = 18;
-const maxCars =25;
+function setCode() {
+    let password = "";
 
-while (carCounter < maxCars){
-window.alert ("Car Number" + carCounter + "is entering")
-carCounter += 1;
+    do {
+        password = prompt("Enter a password longer than 8 characters", "");
+    } while (password.length < 5);
 
-}
-window.alert(Garage is full);
+    window.alert("Entered password: " + password);
 }
